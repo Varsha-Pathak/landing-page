@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url('images/bg-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+    padding: 2% 4%;
+    color: whitesmoke;
+}
+p {
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 2;
+    color: hsl(300, 64%, 92%);
+}
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 3% 5%;
+    border: none;
+    width: 35%;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 3px 1px 7px 2px rgba(68, 65, 63, 0.55);
+}
+.btn:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: whitesmoke;
+}
+.logo-div img {
+    width: 15%;
+    margin-bottom: 5%;
+}
+.container {
+    display: flex;
+}
+.left-container img {
+    width: 100%;
+    transform: translateY(10%);
+}
+.right-container {
+    width: 65%;
+    margin-left: 4%;
+    padding: 0 3% ;
+}
+.big-heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.social-icons {
+    padding: 2% 3%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.icons {
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid whitesmoke;
+    padding: 6px 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.icons:nth-child(1) {
+    padding: 6px 10px;
+}
+.icons:hover {
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+}
+.attribution { 
+    font-size: 0.8rem; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(300, 64%, 92%);
+}
+@media (min-width: 100px) and (max-width: 600px) {
+    body {
+        background-image: url('images/bg-mobile.svg');
+        background-size: contain;
+        padding-top: 10%;
+    }
+    p {
+        padding: 10px 14px;
+    }
+    .logo-div img {
+        width: 40%;
+    }
+    .container {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10%;
+    }
+    .right-container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-top: 20%;
+    }
+    .big-heading {
+        font-size: 1.3rem;
+    }
+    .social-icons {
+        justify-content: center;
+        margin-top: 20%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    .left-container img {
+        transform: translateY(10%);
+    }
+    .big-heading {
+        font-size: 1.5rem;
+    }
+}
